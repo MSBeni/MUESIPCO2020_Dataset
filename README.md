@@ -13,8 +13,8 @@ The experimental environment used to construct the IoT-TD dataset is a 3.5 meter
 ## Tracking Scenarios
 The following three different are implemented to gather RSSI values via BLE beacons, IMU measurements from the mobile device, and ground truth trajectories via the Vicon system: 
 <ol>
-<li>(i) Rectangular Walking, where the user walks constantly on the sides of the rectangular area on a pre-defined path; </li>
-<li>(ii) Diagonal Walking, where the target walks along the diagonals of the area with constant velocity, and; </li>
-<li>(iii) Random Track, where the user walks randomly inside the surveillance region.</li>
+<li> Rectangular Walking, where the user walks constantly on the sides of the rectangular area on a pre-defined path; </li>
+<li> Diagonal Walking, where the target walks along the diagonals of the area with constant velocity, and; </li>
+<li> Random Track, where the user walks randomly inside the surveillance region.</li>
 </ol>
 
