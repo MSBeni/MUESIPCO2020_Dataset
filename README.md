@@ -8,9 +8,12 @@
 Given the recent surge of interest on location-based services via BLE beacons, lack of a dataset with ground truth (actual labels) can be a significant obstacle for advancement of BLE-based indoor tracking/localiztion algorithms and research reproducibility. The paper takes a first step towards this goal and introduces the IoT-TD dataset, where the “Ground Truth Trajectories” are recorded in a synchronized fashion with the RSSI values together with IMU sensor measurements obtained, synchronously, from the moving target’s hand-held device. All three components of the dataset are time-stamped and pre-processed being available publicly for future BLE and PDR tracking algorithmic developments.
 
 ## Pre-Training
-Our pre-training dataset consists of 94323 frontal view chest X-ray images for common thorax diseases. This dataset is extracted from the NIH Chest X-ray dataset available online for public access <a href="https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/36938765345">here</a>. Chest X-ray14 dataset originally contains 112120 X-ray images for 14 thorax abnormalities. This dataset also contains normal cases without specific findings in their corresponding images.<br>To reduce the number of categories, we classified these 15 groups into 5 categories based on the underlying relations between the abnormalities in each disease. The first four groups are dedicated to No findings, Tumors, Pleural diseases, and Lung infections categories. The fifth group encompasses other images without specific relations with the first four groups.
-We then removed 17797 cases with multiple labels (appeared in more than one category) to reduce the complexity and downscaled all images from (1024,1024) to (224,224).
-
+<ol>
+The following three different tracking scenarios are implemented to gather RSSI values via BLE beacons, IMU measurements from the mobile device, and ground truth trajectories via the Vicon system: 
+<li>(i) Rectangular Walking, where the user walks constantly on the sides of the rectangular area on a pre-defined path; </li>
+<li>(ii) Diagonal Walking, where the target walks along the diagonals of the area with constant velocity, and; </li>
+<li>(iii) Random Track, where the user walks randomly inside the surveillance region.</li>
+</ol>
 ### Experiment Setup
 The experimental environment used to construct the IoT-TD dataset is a 3.5 meters to 3.5 meters area. Five BLE modules are used together with the built-in IMU sensor measurements of the user’s mobile device, recorded synchronously with RSSI values.  
 
